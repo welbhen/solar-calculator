@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">Solar Calculator</title>
+  <link id="css" rel="stylesheet" type="text/css" href="/home.css" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans:200,500|Roboto:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img src="https://i.ibb.co/t2wZXRY/Solar-Calculator.png"/>
+  </header>
+  <main id="main">
+    <div class="container">
+      <div class="input-container">
+        <div class="flex-container">
+          <label class="prompt">Latitude (decimal):</label>
+	        <input class="input" type="text" id="lat" value="40">
+        </div>
+	      <div class="flex-container">
+          <label class="prompt">Longitude (decimal):</label>
+	        <input class="input" type="text" id="long" value="-105">
+        </div>
+        <div class="flex-container">
+          <label class="prompt">Monthly Average Electricity Usage (kWh/month):</label>
+	        <input class="input" type="text" id="energy" value="1000">
+        </div>
+        <div class="btn-container">
+          <button class="btn" id="submit">SUBMIT</button> 
+        </div>    
+      </div>
+
+      <div class="response-container">
+        <div class="answer" id="responseField">
+          <!--Answer 1-->
+        </div>
+        <div class="answer" id="calcResultField">
+          <!--Answer 2-->
+        </div>
+      </div>
+      <div class="chart-container">
+        <canvas class="chart" id="myChart">Sorry your browser doesn't support this feature!</canvas>
+      </div>
+      
+    </div>
+    <div class="footer">
+      <h4>Find me at:</h4>
+      <div class="footer-btn">
+        <a class="btn" href="https://github.com/welbhen" target="_blank">GitHub</a>
+        <a class="btn" href="https://welbhen.github.io/" target="_blank">Portfolio</a>
+      </div>   
+    </div>
+  </main>
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="helper.js"></script>
+  
+</body>
+</html>

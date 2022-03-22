@@ -1,0 +1,138 @@
+/* Global styles
+-------------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*.after {
+  box-sizing: inherit;
+}
+body {
+  background-color: #ffffff;
+  text-align: center;
+}
+.container {
+  display: inline-block;
+  text-align: center;
+  width: 60%;
+}
+
+/* Header / Logo
+-------------------------------------------------*/
+header {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 5px;
+}
+header img {
+  width: 300px;
+}
+
+/* Inputs
+-------------------------------------------------*/
+.input-container {
+  display: block;
+  width: 100%;
+}
+.flex-container {
+  display: flex;
+}
+.prompt {
+  width: 40%;
+  height: 25px;
+  font-family: Anton;
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 0.6px;
+  margin: 5px 0;
+  color: #1f233e;
+}
+.input {
+  width: 50%;
+  height: 25px;
+  border-radius: 3.2px;
+  border: solid 0.8px #1f233e;
+  background-color: inherit;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #1f233e;
+  margin: 5px 0;
+}
+.btn-container {
+  display: block;
+  text-align: center;
+}
+.btn {
+  width: 125px;
+  height: 30px;
+  border-radius: 2px;
+  border-color: white;
+  background-color: #1f233e;
+  margin-top: 10px;
+  font-family: Work Sans, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: white;
+}
+.btn:hover{
+  color: #808080;
+  cursor: pointer;
+}
+.btn:active{
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+
+/* Outputs
+-------------------------------------------------*/
+.response-container {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+.answer {
+  width: 50%;
+  background-color: #1f233e;
+  margin: 0 5px;
+  padding: 0 5px;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #ffffff;
+  overflow-wrap: break-word;
+}
+.chart-container {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+.chart {
+	width: 80%;
+}
+
+/* Footer
+-------------------------------------------------*/
+.footer {
+  margin: 10px auto;
+  text-align: center;
+  font-family: AWork Sans, sans-serif;
+  color: #1f233e;
+}
+.footer-btn {
+  display: inline-block;
+}
+.footer a {
+  padding: 5px;
+  text-decoration: none;
+  margin: 5px 0;
+}
