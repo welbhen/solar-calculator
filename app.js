@@ -13,6 +13,8 @@ app.get('/', (req, res) => {
 // the static we want is the css file
 app.use(express.static(__dirname + '/public'));
 
-app.listen(8000, () => {
-	console.log("Server opened! Use: http://localhost:8000");
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => {
+	console.log("Env: " + process.env.NODE_ENV);
+	console.log("Server opened! Port: " + PORT);
 });
