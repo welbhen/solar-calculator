@@ -1,7 +1,11 @@
 // information to reach API
 const url = 'https://developer.nrel.gov/api/solar/solar_resource/v1.json?api_key=';
 
-const myKey = process.env.MYKEY;
+let solarAPI = {
+  key: process.env.MYKEY,
+};
+
+const myKey = solarAPI.key;
 
 const latParams = '&lat=';
 const longParams = '&lon=';
