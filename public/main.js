@@ -1,6 +1,8 @@
 // information to reach API
 const url = 'https://developer.nrel.gov/api/solar/solar_resource/v1.json?api_key=';
-const myKey = 'XgE2xSPYQgNHhu90MwE1pkUJ7lOwXNTGQ7fu7hy4';
+
+const myKey = process.env.NODE_ENV;
+
 const latParams = '&lat=';
 const longParams = '&lon=';
 
@@ -19,7 +21,7 @@ const getSolarData = () => {
   const longQuery = long.value;
   
   const endPoint = url + myKey + latParams + latQuery + longParams + longQuery;
-  console.log(endPoint);
+  //console.log(endPoint);
 
   const xhr = new XMLHttpRequest();
   xhr.responseType = 'json';
