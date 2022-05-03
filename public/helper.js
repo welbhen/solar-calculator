@@ -46,7 +46,7 @@ const renderResponse = (res) => {
 	  							 <br>
 	  							 <br>
 	  							 </p>
-	  							 Avarege Monthly
+	  							 Average Monthly
 	  							 <br>
 	  							 <pre align="justify">Jan:		${jan} kWh/m².day</pre>
 	  							 <pre align="justify">Feb:		${feb} kWh/m².day</pre>
