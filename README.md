@@ -4,4 +4,4 @@ and shows a monthly expected generation value and graph, alongside the average m
 
 This is a real solar system estimator and not just a study app for coding purposes.
 
-I'm using NREL solar irradiance API.
+I'm using [NREL solar irradiance API](https://developer.nrel.gov/docs/solar/).
